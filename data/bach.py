@@ -79,7 +79,7 @@ def write_and_play(stream):
 cols = ['song','time',
         '1','2','3','4','5','6','7','8','9','10','11','12',
         'root','what','chord']
-bach = pd.read_csv(Path(__file__).with_name('bach.data'),
+bach = pd.read_csv('./bach.data',
                    header=None,
                    names = cols)
 bach = bach.loc[:,['song','time','chord']]
